@@ -1,0 +1,28 @@
+{{!< layout}}
+<link rel="stylesheet" href="{{furl '/css/dialog.css'}}" type="text/css"/>
+<form action="#" className="aui" id="forma">
+        <fieldset>
+          <div id="field-group">
+            <label htmlFor="name">Text<span className="aui-icon icon-required"></span></label>
+            <input ref="name"
+                   id="namefield"
+                   type="text"
+                   name="name"
+                   title="Name"
+                   value=""/>
+          </div>
+
+          <div className="field-group">
+            <label htmlFor="labels">Label</label>
+            <input ref="label"
+                id="labelfield"
+                className="text"
+                type="text"
+                name="label"
+                value=""
+                />
+          </div>
+        </fieldset>
+      </form>
+<script src="/js/bundle.js"></script>
+

@@ -1,0 +1,95 @@
+  {
+    "key": "ad-bookmarks",
+    "name": "Bookmarks",
+    "description": "Bookmark messages inside your HipChat room",
+    "vendor": {
+        "name": "HipChat",
+        "url": "https://www.hipchat.com"
+    },
+    "links": {
+        "self": "{{localBaseUrl}}/atlassian-connect.json",
+        "homepage": "{{localBaseUrl}}/atlassian-connect.json"
+    },
+    "capabilities": {
+        "hipchatApiConsumer": {
+            "scopes": [
+                "send_notification"
+            ],
+            "avatar": {
+               "url": "{{localBaseUrl}}/img/logo.png",
+               "url@2x": "{{localBaseUrl}}/img/logo.png"
+            }
+        },
+        "installable": {
+            "callbackUrl": "{{localBaseUrl}}/installable"
+        },
+        "glance": [
+            {
+               "name": {
+                   "value": "Bookmarks"
+               },
+               "key": "ad-bookmarks.glance",
+               "target": "ad-bookmarks.sidebar",
+               "icon": {
+                   "url": "{{localBaseUrl}}/img/logo.png",
+                   "url@2x": "{{localBaseUrl}}/img/logo.png"
+               }
+            }
+        ],
+        "dialog": [
+          {
+              "key": "ad-bookmarks.dialog",
+              "title": {
+                  "value": "Bookmark"
+              },
+              "url": "{{localBaseUrl}}/dialog",
+              "options": {
+                "style": "normal",
+                "primaryAction": {
+                  "name": {
+                    "value": "Save"
+                  },
+                  "key": "ad-bookmarks.save",
+                  "enabled": true
+                },
+                "size": {
+                  "width": "400px",
+                  "height": "170px"
+                }
+              }
+          }
+        ],
+        "webPanel": [
+          {
+            "key": "ad-bookmarks.sidebar",
+            "name": {
+              "value": "Bookmarks"
+            },
+            "location": "hipchat.sidebar.right",
+            "url": "{{localBaseUrl}}/sidebar",
+            "icon": {
+              "url": "{{localBaseUrl}}/img/logo.png",
+              "url@2x": "{{localBaseUrl}}/img/logo.png"
+            }
+          }
+        ],
+        "action": [
+          {
+            "key": "ad-bookmarks-chat-input.action",
+            "name": {
+              "value": "Add bookmark"
+            },
+            "target": "ad-bookmarks.dialog",
+            "location": "hipchat.input.action"
+          },
+          {
+            "key": "ad-bookmarks-message.action.nonlink",
+            "name": {
+              "value": "Bookmark this message"
+            },
+            "target": "ad-bookmarks.dialog",               
+            "location": "hipchat.message.action" 
+          }
+        ]
+    }
+}

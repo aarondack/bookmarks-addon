@@ -1,0 +1,58 @@
+#new_bookmarks form.aui {
+  margin-top:20px;
+}
+#new_bookmarks form.aui .field-group {
+  padding-left:97px;
+}
+.cust-select {
+  width:250px !important;
+}
+form.aui .cust-select.select {
+  padding:0;
+  border:0;
+  line-height: 1.2 !important;
+}
+div.select-menu-outer,
+div.Select-placeholder,
+span.Select-arrow-zone,
+div.Select-menu-outer {
+  display:none !important;
+}
+.Select-input > input {
+  height:28px !important;
+}
+div.Select-control {
+  height:30px !important;
+  border-radius: 2px !important;
+}
+div.Select-input {
+  height:28px !important;
+}
+div.is-open > .Select-control {
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.is-focused > .Select-control {
+  outline-color: rgb(59, 153, 252) !important;
+  outline-offset: -2px !important;
+  outline-style: auto !important;
+  outline-width: 5px !important;
+}
+.Select-item {
+  border-radius:5px !important;
+  border-color:#ddd !important;
+  background-color:#eee !important;
+  color:#333 !important;
+  margin-left:4px !important;
+  margin-top:2px !important;
+  margin-bottom: 2px !important;
+}
+.Select-item-icon {
+  border-right-color: #ddd !important;
+  padding:1px 4px 0 !important;
+  line-height: 1.5em !important;
+}
+.Select-item-icon:hover {
+  background-color: #eee !important;
+  line-height: 1.5em !important;
+}

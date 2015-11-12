@@ -1,0 +1,23 @@
+{
+  "name": "my-hipchat-add-on",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "atlassian-connect-express": "^1.0.6",
+    "atlassian-connect-express-hipchat": "^0.2.4",
+    "browserify": "^12.0.1",
+    "cors": "^2.7.1",
+    "express": "^3.4.8",
+    "express-hbs": "*",
+    "lodash": "*",
+    "request": "^2.33.0",
+    "rsvp": "^3.0.3",
+    "static-expiry": ">=0.0.10"
+  },
+  "optionalDependencies": {
+    "atlassian-connect-express-redis": "^0.1.3"
+  }
+}
